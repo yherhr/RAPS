@@ -208,3 +208,11 @@ footer.site a:hover{color:#fff;}
   .footgrid{grid-template-columns:1fr;}
   .content{padding:54px 0;}
 }
+
+/* --- real photos --- */
+.brand img.mark{width:46px;height:46px;object-fit:contain;background:#fff;border-radius:3px;border:1px solid var(--line);}
+.svc .top img{width:100%;height:100%;object-fit:cover;}
+.about-media img{width:100%;height:100%;object-fit:cover;}
+.gal .shot{padding:0;overflow:hidden;}
+.gal .shot img{width:100%;height:100%;object-fit:cover;transition:.25s;}
+.gal .shot:hover img{transform:scale(1.04);}
