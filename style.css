@@ -216,3 +216,10 @@ footer.site a:hover{color:#fff;}
 .gal .shot{padding:0;overflow:hidden;}
 .gal .shot img{width:100%;height:100%;object-fit:cover;transition:.25s;}
 .gal .shot:hover img{transform:scale(1.04);}
+
+/* --- values strip --- */
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.val{background:#fff;border:1px solid var(--line);border-top:4px solid var(--bush);padding:22px 24px;}
+.val b{display:block;font-family:var(--fh);font-weight:700;text-transform:uppercase;font-size:20px;color:var(--bush);margin-bottom:8px;}
+.val p{font-size:15.5px;margin:0;}
+@media (max-width:900px){.vals{grid-template-columns:1fr;}}
