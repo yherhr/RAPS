@@ -1,13 +1,28 @@
-# Rural APS — customer PREVIEW build (GitHub Pages)
+# Rural APS — deploy build (GitHub repo -> Cloudflare Pages)
 
-This is the review copy for Mathew. Production deploys to Cloudflare Pages from the main build — do not edit this copy directly; regenerate it from the production site.
+Single source: this repo is served by GitHub Pages (preview at
+yherhr.github.io/RAPS/) AND deployed to production by Cloudflare Pages
+(ruralaps.com.au). One push updates both.
 
-Differences from production: relative links (works under a github.io subpath), `noindex` on every page, no sitemap/robots/_redirects, `.nojekyll` added.
+Build notes: relative links (work at domain root and under the /RAPS/
+subpath); canonicals point to https://www.ruralaps.com.au/ so search
+consolidates to the real domain; sitemap.xml/robots.txt/_redirects are
+production files (harmless on GitHub Pages); .nojekyll included.
 
-## Publish
-1. Create a **public** repo (e.g. `raps-preview`) under the yherhr account.
-2. Push these files to the repo root, branch `main`.
-3. Repo Settings -> Pages -> Source: Deploy from a branch -> `main` / root -> Save.
-4. Preview URL: https://yherhr.github.io/raps-preview/ (allow a minute for first deploy).
+## Updating the site
+1. Replace repo files with this build's contents — ADD/OVERWRITE, do not
+   delete images/ first (images added directly to the repo, e.g.
+   Mathew-133.jpg, live only there).
+2. Push to main. GitHub Pages and Cloudflare Pages both redeploy.
 
-Note: the 404 page and enquiry form remain drafts here; the form only goes live on production once the Web3Forms key is added.
+## After the domain goes live on Cloudflare
+- Optionally turn OFF GitHub Pages (repo Settings -> Pages -> Source: None).
+  The repo keeps working as the Cloudflare deploy source; the github.io
+  preview simply stops being served.
+- Submit sitemap.xml in Google Search Console; set up GA4.
+
+## Go-live checklist
+- [ ] images/Mathew-133.jpg present in the repo (referenced by the home About block)
+- [ ] Test the enquiry form (delivers to ruralaps@hotmail.com; check junk on first test)
+- [ ] Verify Facebook link works: https://www.facebook.com/share/1F1fu1cJkC/
+- [ ] Logo/photos reviewed; captions confirmed by Mathew
