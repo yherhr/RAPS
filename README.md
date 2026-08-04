@@ -2,7 +2,7 @@
 
 This is the review copy for Mathew. Production deploys to Cloudflare Pages from the main build — do not edit this copy directly; regenerate it from the production site.
 
-Differences from production: relative links (works under a github.io subpath), `noindex` on every page, preview banner, no sitemap/robots/_redirects, `.nojekyll` added.
+Differences from production: relative links (works under a github.io subpath), `noindex` on every page, no sitemap/robots/_redirects, `.nojekyll` added.
 
 ## Publish
 1. Create a **public** repo (e.g. `raps-preview`) under the yherhr account.
